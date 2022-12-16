@@ -4,6 +4,10 @@ import LandingPage from './components/LandingPage/LandingPage';
 import Home from './components/Home/Home';
 import GameDetail from './components/GameDetail/GameDetail'
 import GameCreateForm from './components/GameCreate/GameCreateForm';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'http://localhost:3001';
+// axios.defaults.baseURL = 'https://videogamesbookstoreback-production.up.railway.app/';
 
 function App() {
   return (

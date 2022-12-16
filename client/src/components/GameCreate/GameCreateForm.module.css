@@ -1,0 +1,162 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  margin-top: 5rem;
+}
+
+.Container h1 {
+  color: rgb(208, 157, 165);
+  text-shadow: 0 0 5px rgb(255, 0, 187), 0 0 15px rgb(255, 0, 187),
+    0 0 30px rgb(255, 0, 187), 0 0 50px rgb(241, 102, 102),
+    0 0 80px rgb(241, 102, 102), 0 0 100px rgb(241, 102, 102);
+  letter-spacing: 10px;
+}
+
+.Container p {
+  color: rgb(208, 157, 165);
+  text-shadow: 0 0 5px rgb(255, 0, 187), 0 0 15px rgb(255, 0, 187),
+    0 0 30px rgb(255, 0, 187), 0 0 50px rgb(241, 102, 102),
+    0 0 80px rgb(241, 102, 102), 0 0 100px rgb(241, 102, 102);
+  font-weight: 400;
+  font-size: 8px;
+}
+
+.Container button {
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+  position: relative;
+  font-size: 12px;
+  border: black;
+  font-weight: 900;
+  padding: 8px;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.071);
+  border-bottom: 5px solid #aba8a8;
+  border-radius: 15px;
+}
+
+.Container button:hover {
+  background-color: #e4e2e2;
+}
+
+.Container button:active {
+  position: relative;
+  top: 5px;
+  border-bottom: none;
+}
+
+
+
+.Container h1 span {
+  animation: flicker 1s linear;
+}
+
+#Flicker1 {
+  animation-delay: 0.8s;
+}
+
+#Flicker2 {
+  animation-delay: 1.5s;
+}
+
+#Flicker3 {
+  animation-delay: 1.8s;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(13, 13, 13, 0.863);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 9);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.Form div{
+    padding: 5px;
+}
+
+.Form select {
+  margin: 3px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  border-bottom: 3.5px solid #aba8a8;
+  box-shadow: 0px 0px 20px 1px transparent;
+  transition: box-shadow 0.4s linear, border-color 0.4s linear;
+  cursor: pointer;
+}
+
+.Form select:focus {
+  border-color: rgb(255, 0, 187, 1);
+  box-shadow: 0px 0px 20px 3px rgb(255, 0, 187, 1);
+}
+
+.Form input {
+  margin: 3px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  border: 2.5px gray solid;
+  box-shadow: 0px 0px 20px 1px transparent;
+  transition: box-shadow 0.4s linear, border-color 0.4s linear;
+  cursor: pointer;
+}
+
+.Form input:focus {
+  border-color: rgb(255, 0, 187, 1);
+  box-shadow: 0px 0px 20px 3px rgb(255, 0, 187, 1);
+}
+
+.Form textarea {
+  margin: 3px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  border: 2.5px solid #aba8a8;
+  box-shadow: 0px 0px 20px 1px transparent;
+  transition: box-shadow 0.4s linear, border-color 0.4s linear;
+  cursor: pointer;
+}
+
+.Form textarea:focus {
+  border-color: rgb(255, 0, 187, 1);
+  box-shadow: 0px 0px 20px 3px rgb(255, 0, 187, 1);
+}
+
+.BtnBack{
+    position: absolute;
+    margin-top: 15px;
+}
+
+.BtnCreate{
+    position: relative;
+    margin: 20px;
+    right: 0;
+}

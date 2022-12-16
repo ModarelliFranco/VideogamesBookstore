@@ -1,0 +1,39 @@
+.Error {
+  font-family: "Press Start 2P", cursive;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  color: rgb(208, 157, 165);
+  text-shadow: 0 0 5px rgb(255, 0, 187), 0 0 15px rgb(255, 0, 187),
+    0 0 30px rgb(255, 0, 187), 0 0 50px rgb(241, 102, 102),
+    0 0 80px rgb(241, 102, 102), 0 0 100px rgb(241, 102, 102);
+  letter-spacing: 5px;
+}
+
+.Error button {
+  position: relative;
+  left: 35%;
+
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 12px;
+  border: black;
+  font-weight: 900;
+  padding: 8px;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.071);
+  border-bottom: 5px solid #aba8a8;
+  border-radius: 15px;
+}
+
+.Error button:hover {
+    background-color: #e4e2e2;
+  }
+  
+  .Error button:active {
+    position: relative;
+    top: 5px;
+    border-bottom: none;
+  }

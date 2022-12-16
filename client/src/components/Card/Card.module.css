@@ -1,0 +1,87 @@
+.card{
+    position: relative;
+    background-color: rgba(13, 13, 13, 0.863);;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 9);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+    
+}
+
+.card:hover{
+    transform: scale(1, 1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 6);
+
+}
+
+.card img{
+width: 275px;
+height: 200px;
+border-radius: 15px;
+}
+
+.card button{
+    position: relative;
+    font-family: 'Zen Dots', cursive;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    border: black;
+    font-weight: 900;
+    padding: 8px;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.071);
+    border-bottom: 5px solid #aba8a8;
+}
+
+.card button:hover{
+    background-color: #e4e2e2;
+}
+
+.card button:active{
+    position: relative;
+    top: 5px;
+    border-bottom: none;
+}
+
+
+
+.card h3{
+    font-family: 'Zen Dots', cursive;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card h5{
+    font-family: 'Zen Dots', cursive;
+    font-weight: 500;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 0;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.card p{
+    font-family: 'Zen Dots', cursive;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+.card span{
+font-family: 'Zen Dots', cursive;
+font-size: 12px;
+ margin-top: 2px;
+ margin-bottom: 5px;
+}
+
+.card a{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}

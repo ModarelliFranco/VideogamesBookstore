@@ -1,0 +1,49 @@
+.Loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 3px rgba(200,50,219,1);
+}
+
+.Loading::before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #fb0094,
+    #ad3ee9,
+    #7614d1,
+    #291861,
+    #1b848a,
+    #0e5a43,
+    #fb0094
+  );
+  animation: animate 20s linear infinite;
+  background-size: 500%;
+  filter: blur(10px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 500% 0;
+  }
+}
+
+.Loading p{
+    position: absolute;
+    left: 39%;
+    margin-top: 3px;
+    font-family: "Press Start 2P", cursive;
+    color: white;
+    font-size: 10px;
+    padding: 1px;
+}
